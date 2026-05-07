@@ -1,0 +1,34 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gateway</title>
+  <link rel="stylesheet" href="/gateway-static/styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <h1 id="title">Service Gateway</h1>
+      <p id="subtitle">Checking status...</p>
+
+      <div class="status-grid">
+        <div class="status-item">
+          <span>Server (ping)</span>
+          <strong id="server-status">...</strong>
+        </div>
+        <div class="status-item">
+          <span>Service (health)</span>
+          <strong id="service-status">...</strong>
+        </div>
+      </div>
+
+      <button id="wake-btn" type="button">Wake Server</button>
+      <div id="spinner" class="spinner hidden" aria-hidden="true"></div>
+      <p id="hint"></p>
+    </section>
+  </main>
+
+  <script src="/gateway-static/app.js"></script>
+</body>
+</html>
